@@ -1,8 +1,15 @@
-// Code Keypad Component Here
+import React from 'react';
 
 function Keypad (){
+
+    function Homer(e){
+        console.log('Entering passwod...',e)
+    }
+
     return (
-        <div></div>
+        <div>
+            <input type='password' placeholder='password' onChange={Homer} />
+        </div>
     )
 }
 
